@@ -26,5 +26,6 @@ services:
       - 80:80
     environment:
       TZ: Asia/Shanghai
+      bitle: 123456
     labels:
       dev.okteto.com/auto-ingress: "true"
