@@ -20,6 +20,7 @@ services:
       dockerfile: Dockerfile_production
     image: nginx:V0.0.1
     container_name: vue-compose-nginx
+    replicas: 1
     # volumes:
     #   - .:/vue-project
     ports:
