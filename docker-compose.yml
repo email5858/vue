@@ -1,0 +1,28 @@
+version: '3.1'
+services:
+  # node:
+  #   restart: always
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   image: node:V0.0.1
+  #   container_name: vue-compose-node
+  #   # volumes:
+  #   #   - .:/vue-project
+  #   ports:
+  #     - 8083:8080
+  #   environment:
+  #     TZ: Asia/Shanghai
+  blog:
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile_production
+    image: nginx:V0.0.1
+    container_name: vue-compose-nginx
+    # volumes:
+    #   - .:/vue-project
+    ports:
+      - 8084:80
+    environment:
+      TZ: Asia/Shanghai
