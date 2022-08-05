@@ -20,6 +20,8 @@ services:
       dockerfile: Dockerfile_production
     image: nginx:V0.0.1
     container_name: vue-compose-nginx
+	labels:
+	  dev.okteto.com/auto-ingress: "true"
     # volumes:
     #   - .:/vue-project
     ports:
