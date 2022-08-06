@@ -29,4 +29,4 @@ services:
       TZ: Asia/Shanghai
       bitle: 123456
     labels:
-      dev.okteto.com/auto-ingress: "domain"
+      dev.okteto.com/generate-host: "domain"
